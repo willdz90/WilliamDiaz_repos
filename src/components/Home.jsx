@@ -54,7 +54,7 @@ export default function Home(){
                     />
                     <div className='contenedorCards'>
                     {   
-                        currentPokemons && currentPokemons.length === 0 ?
+                        allPokemons?.length === 0 ?
                         <NotFound/> :
                         currentPokemons?.map( p => {
                             return (

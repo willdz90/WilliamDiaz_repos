@@ -22,7 +22,7 @@ export default function SearchBar({reloadPokemons}) {
   }
 
   function captureValue(e){
-    setPokemonName(e.target.value)
+    setPokemonName(e.target.value.toLowerCase())
     setErrors(validateInput(e.target.value))
   }
 

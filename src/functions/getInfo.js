@@ -56,7 +56,7 @@ export const getAllInfo = async (name) => {
     }
   } catch (error) {
     console.log(error.message)
-    return []
+    return [];
   }
     
 };

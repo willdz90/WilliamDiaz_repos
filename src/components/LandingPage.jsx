@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import pokeLogo from '../assets/pokeLogo.png';
 import '../styles/LandingPage.css';
 import ReactPlayer from 'react-player';
-import { useEffect } from 'react';
-import { getPokemons, getTypes } from '../redux/actions';
-import { useDispatch } from 'react-redux';
 
 export default function LandingPage(){
 
