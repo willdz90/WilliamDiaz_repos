@@ -1,0 +1,66 @@
+.barra{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 15px;
+  background-color: gray;
+  box-shadow: 0.2rem 0.2rem rgb(51, 50, 50), 0.3rem 0.3rem rgb(0, 0, 0);
+  font-family: 'VT323', monospace;
+  font-size: 1.1em ;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  padding: 10px;
+  margin: 5px;
+  width: 85%;
+  font-family: 'VT323', monospace;
+  font-size: 1.3em;
+}
+
+#casilla{
+  width: 35vw;
+  height: 20%;
+  border-radius: 10px;
+}
+
+#btnAdd{
+  width: fit-content;
+  padding: 6.8px;
+  font-size: 1.1em;
+  font-family: 'VT323', monospace;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem rgb(51, 50, 50), 0.2rem 0.2rem rgb(0, 0, 0);
+}
+
+#btnAdd :active{
+  transform: translateY(0.4rem);
+}
+
+#btnReload{
+  width: fit-content;
+  margin-top: 1.4vh;
+  margin-right: 1vw;
+  height: 2em;
+  padding: 5.8px;
+  font-size: 1.1em;
+  font-family: 'VT323', monospace;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem rgb(51, 50, 50), 0.2rem 0.2rem rgb(0, 0, 0);
+}
+
+.errores{
+  color: red;
+  font-weight: bold;
+  margin-left: 1.5vw;
+}

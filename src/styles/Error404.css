@@ -1,0 +1,16 @@
+.errorContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ashpika{
+    width: 36vw;
+}
+
+.errorText{
+    width: 50vw;
+    height: 15vh;
+}

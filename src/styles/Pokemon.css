@@ -1,0 +1,80 @@
+.imgPokemonDetail{
+    width: 20vw;
+    height: auto;
+    padding: 0;
+    margin-bottom: 1vh;
+    margin-left: -35px;
+}
+
+.contenedorPokemon{
+    display: flex;
+    flex-direction: column;
+}
+.pokeMain{
+    background-color: #1b1b1b;
+    display: flex;
+}
+
+.pokemonContainer{
+    margin: 2vw auto;
+    display: flexbox;
+    border: 8px double black;
+    border-radius: 50px;
+    width: 40vw;
+    background-color: red; 
+    box-shadow: -0.5rem 0.5rem rgb(139, 2, 2), -0.6rem 0.6rem rgb(0, 0, 0);
+}
+
+.pokemonCatched{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw;
+    align-content: center;
+    justify-content: space-between;
+    height: 37vh;
+    border: 8px double black;
+    margin: 15px;
+    border-radius: 50px; 
+    background-color: whitesmoke;
+}
+
+.containerImgPoke{
+    width: 10vw;
+}
+
+.nombrePoke{
+    display: flex;
+    padding: 15px;
+    font-family: 'VT323', monospace;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: white;
+    border: 8px double black;
+    width: max-content;
+    margin: 10px auto 0px;
+    border-radius: 50px;
+}
+
+.infoPokemon{
+    font-size: 1.5em;
+    font-family: 'VT323', monospace;
+    border: 3px dotted black;
+    border-radius: 25px;
+    border: 3px dotted black;
+    padding: 15px 10px 15px;
+    width: 12vw;
+}
+
+.containerSprites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imgSprite{
+    width: 11vw;
+}

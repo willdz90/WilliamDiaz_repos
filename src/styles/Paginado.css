@@ -1,0 +1,40 @@
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedorPaginado{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1b1b1b;
+    margin: 10px;
+}
+
+.number{
+    margin: 5px;
+    border: 2px solid whitesmoke;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 38%, rgba(121,9,9,1) 41%);
+    list-style: none;
+    width: 2vw;
+    height: 4.5vh;
+    border-radius: 50%;
+}
+.numberPage{  
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin: 5px auto 0px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: 'VT323', monospace;
+}

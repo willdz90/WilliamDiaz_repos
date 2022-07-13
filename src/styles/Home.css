@@ -1,0 +1,29 @@
+.contenedorCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.homeContainer{
+    background-color: #1b1b1b;
+    height: 100%;
+}
+
+.charmanrizard{
+    width: 25vw;
+}
+
+.noPokemonText{
+    font-weight: bolder;
+    font-size: 2.2em;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 0.18em;
+    -webkit-text-stroke: 2.5px rgb(0, 0, 95);
+    color: #ffcc03;
+    text-shadow: -1px 1px 0px rgb(157, 181, 231),
+                 -2px 2px 0px rgb(157, 181, 231),
+                 -3px 3px 0px rgb(157, 181, 231),
+                 -4px 4px 0px rgb(157, 181, 231),
+                 -5px 5px 0px black;
+}
