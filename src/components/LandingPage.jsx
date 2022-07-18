@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { es } from '../i8n.js';
 import pokeLogo from '../assets/pokeLogo.png';
 import '../styles/LandingPage.css';
 import ReactPlayer from 'react-player';
@@ -14,7 +15,7 @@ export default function LandingPage(){
                 </div>
                 <div>
                     <Link to='/pokemons'>
-                        <button className='imgPokeLogo'>Empezar busqueda</button>
+                        <button className='imgPokeLogo'>{es.BOTONES.ENTRAR}</button>
                     </Link>
                 </div>
             </div>

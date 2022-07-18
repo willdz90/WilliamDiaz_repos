@@ -1,13 +1,13 @@
 const axios = require('axios');
 
 export const getAllInfo = async (name) => {
+  let listPokemones = [];
   try {
     if(name){
-      let listPokemones = [];
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
       const pokemon = response.data;
       listPokemones.push({
-        id: pokemon.id,
+        id : pokemon.id,
         imagen: pokemon.sprites.other.home.front_default,
         nombre : pokemon.name.toUpperCase(),
         vida: pokemon.stats[0].base_stat,
@@ -21,7 +21,6 @@ export const getAllInfo = async (name) => {
 
       return listPokemones;
     }else{
-      let listPokemones = [];
       const response = await axios.get('https://pokeapi.co/api/v2/pokemon');
       let respuesta = await response.data.results;
       const nextPage = await axios.get(response.data.next);

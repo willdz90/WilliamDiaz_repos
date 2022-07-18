@@ -6,15 +6,15 @@ import { getSrcImage } from '../functions/getSrcImage.js';
 import { useParams } from 'react-router';
 import { getPokemonInfoById } from '../functions/getInfo.js'
 import '../styles/Pokemon.css';
+import { es } from '../i8n.js';
 
 export default function Pokemon() {
 
+    const space = ': ';
     let { pokemonId } = useParams();
 
     const [ pokemonInfo, setPokemonInfo ] = useState();
     const [loadingPokemon, setLoadingPokemon] = useState(true);
-
-    console.log(pokemonInfo);
 
     useEffect(() => {
         async function getInfoPokemon(){
@@ -47,11 +47,11 @@ export default function Pokemon() {
                                             <img src={getSrcImage(p.imagen)} alt={p.nombre} className="imgPokemonDetail"/>    
                                         </div>
                                         <div className='infoPokemon'>
-                                            <h5>ID: #{p.id}</h5>
-                                            <h5>Tipo 1: {p.tipo}</h5>
-                                            {p.tipo2 && p.tipo2 !== null ? <h5>Tipo 2: {p.tipo2}</h5> : null}
-                                            <h5>Peso: {p.peso} kg</h5>
-                                            <h5>Movimientos: {p.movimientos?.slice(0,4).map(m => {
+                                            <h5>{es.GENERALIDADES.ID}: {p.id}</h5>
+                                            <h5>{es.GENERALIDADES.TIPO1}: {p.tipo}</h5>
+                                            {p.tipo2 && p.tipo2 !== null ? <h5>{es.GENERALIDADES.TIPO2}: {p.tipo2}</h5> : null}
+                                            <h5>{es.GENERALIDADES.PESO}: {p.peso} kg</h5>
+                                            <h5>{es.GENERALIDADES.MOVIMIENTOS}: {p.movimientos?.slice(0,4).map(m => {
                                                 return(
                                                     <p>{m.move.name}</p>
                                                 )
@@ -67,6 +67,7 @@ export default function Pokemon() {
                             pokemonInfo?.map( p => {
                                 return(
                                     <div className='containerSprites'>
+                                        <h3>{es.GENERALIDADES.SPRITES}</h3>
                                         <img className='imgSprite' src={p.sprites.front_default} alt="front default"></img>
                                         <img className='imgSprite' src={p.sprites.front_shiny} alt="front default"></img>
                                         <img className='imgSprite' src={p.sprites.other.dream_world.front_default} alt="front default"></img>

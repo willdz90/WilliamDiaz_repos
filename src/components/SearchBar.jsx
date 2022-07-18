@@ -1,6 +1,7 @@
 import React, {Fragment, useState } from "react";
 import { useDispatch } from "react-redux";
 import { getPokemonByName } from "../redux/actions";
+import { es } from '../i8n.js';
 import '../styles/Nav.css';
 
 export default function SearchBar({reloadPokemons}) {
@@ -42,9 +43,9 @@ export default function SearchBar({reloadPokemons}) {
           value={pokemonName}
         />
         <input type="submit" value="Buscar en pokedex" id="btnAdd" disabled={Object.keys(errors).length === 0 ? false : true}/>
-        { errors && errors.name ? <span className="errores">DEBES INGRESAR UN NOMBRE</span> : null}
+        { errors && errors.name ? <span className="errores">{es.MENSAJES_DE_ERRORES.NO_POKEMON_NAME}</span> : null}
       </form>
-        <button id="btnReload" onClick={reloadPokemons}>Cargar Pokemons</button> 
+        <button id="btnReload" onClick={reloadPokemons}>{es.BOTONES.CARGAR_POKEMONES}</button> 
     </Fragment>
   );
 }
